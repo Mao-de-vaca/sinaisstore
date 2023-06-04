@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pagamento</title>
+    <style>
+      body {
+        background-color: black;
+        color: red;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .button {
+        padding: 10px 20px;
+        border-radius: 25px;
+        border: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pagamento</h1>
+    <p>Faça o pagamento</p>
+    <button class="button" onclick="redirecionarParaWhatsApp()">Efetuar pagamento</button>
+
+    <script>
+      function redirecionarParaWhatsApp() {
+        // Redirecionar para o WhatsApp
+        window.location.href = 'https://api.whatsapp.com/send?phone=+258866188319';
+      }
+    </script>
+  </body>
+</html>
+

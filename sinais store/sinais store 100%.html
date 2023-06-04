@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pagamento</title>
+    <style>
+      body {
+        background-color: #681114c6;
+        color: #e054cde3;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .button {
+        padding: 10px 20px;
+        border-radius: 25px;
+        border: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sinais Store 100%</h1>
+    <p>clique no botao</p>
+    <button class="button" onclick="redirecionarParaWhatsApp()">Turbinar</button>
+
+    <script>
+      function redirecionarParaWhatsApp() {
+        // Redirecionar para o WhatsApp
+        window.location.href = 'https://api.whatsapp.com/send?phone=+258866188319';
+      }
+    </script>
+  </body>
+</html>
+
